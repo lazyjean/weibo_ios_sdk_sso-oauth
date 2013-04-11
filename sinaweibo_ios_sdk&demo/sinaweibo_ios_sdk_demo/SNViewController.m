@@ -17,11 +17,10 @@
 
 - (void)dealloc
 {
-    [userInfo release], userInfo = nil;
-    [statuses release], statuses = nil;
-    [postStatusText release], postStatusText = nil;
-    [postImageStatusText release], postImageStatusText = nil;
-    [super dealloc];
+    userInfo = nil;
+    statuses = nil;
+    postStatusText = nil;
+    postImageStatusText = nil;
 }
 
 - (SinaWeibo *)sinaweibo
@@ -112,7 +111,6 @@
     UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
     logoImageView.frame = CGRectMake(50, 40, 73, 30);
     [self.view addSubview:logoImageView];
-    [logoImageView release];
     
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.text = @"iOS SDK DEMO";
@@ -120,7 +118,6 @@
     titleLabel.font = [UIFont systemFontOfSize:18];
     titleLabel.frame = CGRectMake(140, 40, 140, 30);
     [self.view addSubview:titleLabel];
-    [titleLabel release];
     
     NSString *login = [NSString stringWithFormat:@"login - appKey=%@", kAppKey];
     loginButton = [self buttonWithFrame:CGRectMake(20, 100, 280, 40) action:@selector(loginButtonPressed)];
@@ -153,8 +150,8 @@
     NSLog(@"%@", [keyWindow subviews]);
     
     
-    [userInfo release], userInfo = nil;
-    [statuses release], statuses = nil;
+    userInfo = nil;
+    statuses = nil;
     
     SinaWeibo *sinaweibo = [self sinaweibo];
     [sinaweibo logIn];
@@ -190,7 +187,7 @@ static int post_status_times = 0;
     if (!postStatusText)
     {
         post_status_times ++;
-        [postStatusText release], postStatusText = nil;
+        postStatusText = nil;
         postStatusText = [[NSString alloc] initWithFormat:@"test post status : %i %@", post_status_times, [NSDate date]];
     }
     
@@ -200,7 +197,6 @@ static int post_status_times = 0;
                                               otherButtonTitles:@"OK", nil];
     alertView.tag = 0;
     [alertView show];
-    [alertView release];
 }
 
 static int post_image_status_times = 0;
@@ -209,7 +205,7 @@ static int post_image_status_times = 0;
     if (!postImageStatusText)
     {
         post_image_status_times ++;
-        [postImageStatusText release], postImageStatusText = nil;
+        postImageStatusText = nil;
         postImageStatusText = [[NSString alloc] initWithFormat:@"test post image status : %i %@", post_image_status_times, [NSDate date]];
     }
     
@@ -219,7 +215,6 @@ static int post_image_status_times = 0;
                                               otherButtonTitles:@"OK", nil];
     alertView.tag = 1;
     [alertView show];
-    [alertView release];
 }
 
 - (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex
@@ -302,11 +297,11 @@ static int post_image_status_times = 0;
 {
     if ([request.url hasSuffix:@"users/show.json"])
     {
-        [userInfo release], userInfo = nil;
+        userInfo = nil;
     }
     else if ([request.url hasSuffix:@"statuses/user_timeline.json"])
     {
-        [statuses release], statuses = nil;
+        statuses = nil;
     }
     else if ([request.url hasSuffix:@"statuses/update.json"])
     {
@@ -314,7 +309,6 @@ static int post_image_status_times = 0;
                                                             message:[NSString stringWithFormat:@"Post status \"%@\" failed!", postStatusText]
                                                            delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alertView show];
-        [alertView release];
         
         NSLog(@"Post status failed with error : %@", error);
     }
@@ -324,7 +318,6 @@ static int post_image_status_times = 0;
                                                             message:[NSString stringWithFormat:@"Post image status \"%@\" failed!", postImageStatusText]
                                                            delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alertView show];
-        [alertView release];
         
         NSLog(@"Post image status failed with error : %@", error);
     }
@@ -337,13 +330,11 @@ static int post_image_status_times = 0;
 {
     if ([request.url hasSuffix:@"users/show.json"])
     {
-        [userInfo release];
-        userInfo = [result retain];
+        userInfo = result;
     }
     else if ([request.url hasSuffix:@"statuses/user_timeline.json"])
     {
-        [statuses release];
-        statuses = [[result objectForKey:@"statuses"] retain];
+        statuses = [result objectForKey:@"statuses"];
     }
     else if ([request.url hasSuffix:@"statuses/update.json"])
     {
@@ -351,9 +342,8 @@ static int post_image_status_times = 0;
                                                             message:[NSString stringWithFormat:@"Post status \"%@\" succeed!", [result objectForKey:@"text"]]
                                                            delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alertView show];
-        [alertView release];
 
-        [postStatusText release], postStatusText = nil;
+        postStatusText = nil;
     }
     else if ([request.url hasSuffix:@"statuses/upload.json"])
     {
@@ -361,9 +351,8 @@ static int post_image_status_times = 0;
                                                             message:[NSString stringWithFormat:@"Post image status \"%@\" succeed!", [result objectForKey:@"text"]]
                                                            delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alertView show];
-        [alertView release];
         
-        [postImageStatusText release], postImageStatusText = nil;
+        postImageStatusText = nil;
     }
     
     [self resetButtons];

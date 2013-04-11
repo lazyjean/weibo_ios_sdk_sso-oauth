@@ -91,16 +91,8 @@
     }
     
     [request disconnect];
-    [request release], request = nil;
-    [userID release], userID = nil;
-    [accessToken release], accessToken = nil;
-    [expirationDate release], expirationDate = nil;
-    [appKey release], appKey = nil;
-    [appSecret release], appSecret = nil;
-    [appRedirectURI release], appRedirectURI = nil;
-    [ssoCallbackScheme release], ssoCallbackScheme = nil;
+    request = nil;
     
-    [super dealloc];
 }
 
 /**
@@ -133,12 +125,12 @@
                             self.appRedirectURI, @"redirect_uri",
                             code, @"code", nil];
     [request disconnect];
-    [request release], request = nil;
+    request = nil;
     
-    request = [[SinaWeiboRequest requestWithURL:kSinaWeiboWebAccessTokenURL
+    request = [SinaWeiboRequest requestWithURL:kSinaWeiboWebAccessTokenURL
                                      httpMethod:@"POST"
                                          params:params
-                                       delegate:self] retain];
+                                       delegate:self];
     
     [request connect];
 }
@@ -335,7 +327,6 @@
             [[SinaWeiboAuthorizeView alloc] initWithAuthParams:params
                                                       delegate:self];
             [authorizeView show];
-            [authorizeView release];
         }
     }
 }
@@ -427,7 +418,7 @@
             [delegate sinaweibo:self logInDidFailWithError:error];
         }
         
-        [request release], request = nil;
+        request = nil;
     }
 }
 
@@ -438,7 +429,7 @@
         NSLog(@"access token result = %@", result);
         
         [self logInDidFinishWithAuthInfo:result];
-        [request release], request = nil;
+        request = nil;
     }
 }
 

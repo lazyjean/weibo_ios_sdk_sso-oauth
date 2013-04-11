@@ -18,13 +18,13 @@
     UIActivityIndicatorView *indicatorView;
     UIInterfaceOrientation previousOrientation;
     
-    id<SinaWeiboAuthorizeViewDelegate> delegate;
+    id<SinaWeiboAuthorizeViewDelegate> __weak delegate;
     
     NSString *appRedirectURI;
     NSDictionary *authParams;
 }
 
-@property (nonatomic, assign) id<SinaWeiboAuthorizeViewDelegate> delegate;
+@property (nonatomic, weak) id<SinaWeiboAuthorizeViewDelegate> delegate;
 
 - (id)initWithAuthParams:(NSDictionary *)params
                 delegate:(id<SinaWeiboAuthorizeViewDelegate>)delegate;

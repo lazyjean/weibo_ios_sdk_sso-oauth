@@ -12,19 +12,29 @@
 		18F78D5E154528C6008467F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F78D5D154528C6008467F4 /* Foundation.framework */; };
 		18F78D60154528C6008467F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F78D5F154528C6008467F4 /* CoreGraphics.framework */; };
 		18F78D66154528C6008467F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D64154528C6008467F4 /* InfoPlist.strings */; };
-		18F78D68154528C6008467F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F78D67154528C6008467F4 /* main.m */; };
-		18F78D6C154528C6008467F4 /* SNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F78D6B154528C6008467F4 /* SNAppDelegate.m */; };
-		18F78D6F154528C6008467F4 /* SNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F78D6E154528C6008467F4 /* SNViewController.m */; };
+		18F78D68154528C6008467F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F78D67154528C6008467F4 /* main.m */; settings = {COMPILER_FLAGS = ""; }; };
+		18F78D6C154528C6008467F4 /* SNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F78D6B154528C6008467F4 /* SNAppDelegate.m */; settings = {COMPILER_FLAGS = ""; }; };
+		18F78D6F154528C6008467F4 /* SNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F78D6E154528C6008467F4 /* SNViewController.m */; settings = {COMPILER_FLAGS = ""; }; };
 		18F78D9B1545A631008467F4 /* button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D971545A631008467F4 /* button_background.png */; };
 		18F78D9C1545A631008467F4 /* button_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D981545A631008467F4 /* button_background@2x.png */; };
 		18F78D9D1545A631008467F4 /* button_background_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D991545A631008467F4 /* button_background_disabled.png */; };
 		18F78D9E1545A631008467F4 /* button_background_disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D9A1545A631008467F4 /* button_background_disabled@2x.png */; };
 		18F78DA01545C6A5008467F4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D9F1545C6A5008467F4 /* logo.png */; };
-		BA59D08F16818B0100C76B64 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D08E16818B0100C76B64 /* JSONKit.m */; };
+		6235729717163937007A7611 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6235729517163937007A7611 /* InfoPlist.strings */; };
+		6235729C17163C61007A7611 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D08E16818B0100C76B64 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6235729D17163C61007A7611 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09216818B1700C76B64 /* SinaWeibo.m */; };
+		6235729E17163C61007A7611 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09416818B1700C76B64 /* SinaWeiboAuthorizeView.m */; };
+		6235729F17163C61007A7611 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09716818B1700C76B64 /* SinaWeiboRequest.m */; };
+		623572A017163C7A007A7611 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D08D16818B0100C76B64 /* JSONKit.h */; };
+		623572A117163C7A007A7611 /* SinaWeibo.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D09116818B1700C76B64 /* SinaWeibo.h */; };
+		623572A217163C7A007A7611 /* SinaWeiboAuthorizeView.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D09316818B1700C76B64 /* SinaWeiboAuthorizeView.h */; };
+		623572A317163C7A007A7611 /* SinaWeiboRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D09616818B1700C76B64 /* SinaWeiboRequest.h */; };
+		623572A417163D09007A7611 /* SinaWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA59D09016818B1700C76B64 /* SinaWeibo.bundle */; };
+		BA59D08F16818B0100C76B64 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D08E16818B0100C76B64 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BA59D09816818B1700C76B64 /* SinaWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA59D09016818B1700C76B64 /* SinaWeibo.bundle */; };
-		BA59D09916818B1700C76B64 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09216818B1700C76B64 /* SinaWeibo.m */; };
-		BA59D09A16818B1700C76B64 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09416818B1700C76B64 /* SinaWeiboAuthorizeView.m */; };
-		BA59D09B16818B1700C76B64 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09716818B1700C76B64 /* SinaWeiboRequest.m */; };
+		BA59D09916818B1700C76B64 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09216818B1700C76B64 /* SinaWeibo.m */; settings = {COMPILER_FLAGS = ""; }; };
+		BA59D09A16818B1700C76B64 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09416818B1700C76B64 /* SinaWeiboAuthorizeView.m */; settings = {COMPILER_FLAGS = ""; }; };
+		BA59D09B16818B1700C76B64 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09716818B1700C76B64 /* SinaWeiboRequest.m */; settings = {COMPILER_FLAGS = ""; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +56,10 @@
 		18F78D991545A631008467F4 /* button_background_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_background_disabled.png; sourceTree = "<group>"; };
 		18F78D9A1545A631008467F4 /* button_background_disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_background_disabled@2x.png"; sourceTree = "<group>"; };
 		18F78D9F1545C6A5008467F4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		6235729117163937007A7611 /* SinaWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6235729417163937007A7611 /* SinaWeibo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SinaWeibo-Info.plist"; sourceTree = "<group>"; };
+		6235729617163937007A7611 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6235729817163937007A7611 /* SinaWeibo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SinaWeibo-Prefix.pch"; sourceTree = "<group>"; };
 		BA59D08D16818B0100C76B64 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = sinaweibo_ios_sdk/JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		BA59D08E16818B0100C76B64 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = sinaweibo_ios_sdk/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		BA59D09016818B1700C76B64 /* SinaWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SinaWeibo.bundle; path = sinaweibo_ios_sdk/SinaWeibo/SinaWeibo.bundle; sourceTree = "<group>"; };
@@ -69,6 +83,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6235728B17163937007A7611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +99,7 @@
 				18F78D61154528C6008467F4 /* sinaweibo_ios_sdk_demo */,
 				BA59D08916818A6400C76B64 /* sinaweibo_ios_sdk */,
 				18F78D961545A630008467F4 /* Resources */,
+				6235729217163937007A7611 /* SinaWeibo */,
 				18F78D5A154528C6008467F4 /* Frameworks */,
 				18F78D58154528C6008467F4 /* Products */,
 			);
@@ -87,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				18F78D57154528C6008467F4 /* sinaweibo_ios_sdk_demo.app */,
+				6235729117163937007A7611 /* SinaWeibo.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +160,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		6235729217163937007A7611 /* SinaWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				6235729317163937007A7611 /* Supporting Files */,
+			);
+			path = SinaWeibo;
+			sourceTree = "<group>";
+		};
+		6235729317163937007A7611 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6235729417163937007A7611 /* SinaWeibo-Info.plist */,
+				6235729517163937007A7611 /* InfoPlist.strings */,
+				6235729817163937007A7611 /* SinaWeibo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BA59D08916818A6400C76B64 /* sinaweibo_ios_sdk */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +213,20 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6235728C17163937007A7611 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623572A017163C7A007A7611 /* JSONKit.h in Headers */,
+				623572A117163C7A007A7611 /* SinaWeibo.h in Headers */,
+				623572A217163C7A007A7611 /* SinaWeiboAuthorizeView.h in Headers */,
+				623572A317163C7A007A7611 /* SinaWeiboRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		18F78D56154528C6008467F4 /* sinaweibo_ios_sdk_demo */ = {
 			isa = PBXNativeTarget;
@@ -189,6 +244,27 @@
 			productName = sinaweibo_ios_sdk_demo;
 			productReference = 18F78D57154528C6008467F4 /* sinaweibo_ios_sdk_demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6235729017163937007A7611 /* SinaWeibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6235729B17163937007A7611 /* Build configuration list for PBXNativeTarget "SinaWeibo" */;
+			buildPhases = (
+				6235728917163937007A7611 /* ShellScript */,
+				6235728A17163937007A7611 /* Sources */,
+				6235728B17163937007A7611 /* Frameworks */,
+				6235728C17163937007A7611 /* Headers */,
+				6235728D17163937007A7611 /* Resources */,
+				6235728E17163937007A7611 /* ShellScript */,
+				6235728F17163937007A7611 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SinaWeibo;
+			productName = SinaWeibo;
+			productReference = 6235729117163937007A7611 /* SinaWeibo.framework */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -213,6 +289,7 @@
 			projectRoot = "";
 			targets = (
 				18F78D56154528C6008467F4 /* sinaweibo_ios_sdk_demo */,
+				6235729017163937007A7611 /* SinaWeibo */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +310,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6235728D17163937007A7611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6235729717163937007A7611 /* InfoPlist.strings in Resources */,
+				623572A417163D09007A7611 /* SinaWeibo.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6235728917163937007A7611 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n";
+		};
+		6235728E17163937007A7611 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
+		};
+		6235728F17163937007A7611 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\necho \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n\n# Build framework structure\n\necho \"Build symlinks\"\n\necho ln -sfh A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\nln -sfh A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\necho ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\necho ln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\nln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\necho ln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\n\n\n# Link to binary for unit tests\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework\"\nln -sfh \"../${WRAPPER_NAME}/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework/.fake_fw_testing\"\n\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18F78D53154528C6008467F4 /* Sources */ = {
@@ -250,6 +378,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6235728A17163937007A7611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6235729C17163C61007A7611 /* JSONKit.m in Sources */,
+				6235729D17163C61007A7611 /* SinaWeibo.m in Sources */,
+				6235729E17163C61007A7611 /* SinaWeiboAuthorizeView.m in Sources */,
+				6235729F17163C61007A7611 /* SinaWeiboRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -257,6 +396,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				18F78D65154528C6008467F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6235729517163937007A7611 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6235729617163937007A7611 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -310,6 +457,7 @@
 		18F78D76154528C6008467F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sinaweibo_ios_sdk_demo/sinaweibo_ios_sdk_demo-Prefix.pch";
@@ -325,6 +473,7 @@
 		18F78D77154528C6008467F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sinaweibo_ios_sdk_demo/sinaweibo_ios_sdk_demo-Prefix.pch";
 				INFOPLIST_FILE = "sinaweibo_ios_sdk_demo/sinaweibo_ios_sdk_demo-Info.plist";
@@ -332,6 +481,71 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6235729917163937007A7611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SinaWeibo/SinaWeibo-Prefix.pch";
+				INFOPLIST_FILE = "SinaWeibo/SinaWeibo-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		6235729A17163937007A7611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SinaWeibo/SinaWeibo-Prefix.pch";
+				INFOPLIST_FILE = "SinaWeibo/SinaWeibo-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
@@ -355,6 +569,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6235729B17163937007A7611 /* Build configuration list for PBXNativeTarget "SinaWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6235729917163937007A7611 /* Debug */,
+				6235729A17163937007A7611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

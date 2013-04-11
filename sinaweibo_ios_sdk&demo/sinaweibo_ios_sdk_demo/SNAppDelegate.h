@@ -11,10 +11,9 @@
 /**将下面注释取消，并定义自己的app key，app secret以及授权跳转地址uri
  此demo即可编译运行**/
 
-//#define kAppKey             @"your app_key"
-//#define kAppSecret          @"your app_secret"
-//#define kAppRedirectURI     @"your app_rederict_uri"
-
+#define kAppKey             @"3018973784"
+#define kAppSecret          @"f00e83a6c27ceb482c4b510fcbc655fc"
+#define kAppRedirectURI     @"http://www.qq.com"
 #ifndef kAppKey
 #error
 #endif
