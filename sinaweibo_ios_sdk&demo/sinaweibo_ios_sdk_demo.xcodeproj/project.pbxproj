@@ -25,10 +25,10 @@
 		6235729D17163C61007A7611 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09216818B1700C76B64 /* SinaWeibo.m */; };
 		6235729E17163C61007A7611 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09416818B1700C76B64 /* SinaWeiboAuthorizeView.m */; };
 		6235729F17163C61007A7611 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09716818B1700C76B64 /* SinaWeiboRequest.m */; };
-		623572A017163C7A007A7611 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D08D16818B0100C76B64 /* JSONKit.h */; };
-		623572A117163C7A007A7611 /* SinaWeibo.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D09116818B1700C76B64 /* SinaWeibo.h */; };
-		623572A217163C7A007A7611 /* SinaWeiboAuthorizeView.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D09316818B1700C76B64 /* SinaWeiboAuthorizeView.h */; };
-		623572A317163C7A007A7611 /* SinaWeiboRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D09616818B1700C76B64 /* SinaWeiboRequest.h */; };
+		623572A017163C7A007A7611 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D08D16818B0100C76B64 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623572A117163C7A007A7611 /* SinaWeibo.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D09116818B1700C76B64 /* SinaWeibo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623572A217163C7A007A7611 /* SinaWeiboAuthorizeView.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D09316818B1700C76B64 /* SinaWeiboAuthorizeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623572A317163C7A007A7611 /* SinaWeiboRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BA59D09616818B1700C76B64 /* SinaWeiboRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		623572A417163D09007A7611 /* SinaWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA59D09016818B1700C76B64 /* SinaWeibo.bundle */; };
 		BA59D08F16818B0100C76B64 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D08E16818B0100C76B64 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BA59D09816818B1700C76B64 /* SinaWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA59D09016818B1700C76B64 /* SinaWeibo.bundle */; };
@@ -577,6 +577,7 @@
 				6235729A17163937007A7611 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
